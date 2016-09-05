@@ -1,0 +1,1078 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+@import "https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700";
+@import "https://fonts.googleapis.com/css?family=Yeseva+One";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700";
+@import "https://fonts.googleapis.com/css?family=Lato";
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+.wrapper {
+  padding: 0 3%;
+  margin: auto;
+}
+.list-to-flex {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.hidden-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `retina-sprite` class sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+@icon-home-group: 'icon-home' @icon-home @icon-home-2x;
+
+.icon-home {
+  .retina-sprite(@icon-home-group);
+}
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+/*
+The `.retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in LESS
+
+.retina-sprites(@retina-groups);
+*/
+.about {
+  background-color: #fff;
+  background-image: url("../img/bg-about@1x.png");
+  padding-top: 60px;
+  padding-bottom: 25px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .about {
+    background-image: url("../img/bg-about@2x.png");
+    background-size: cover;
+  }
+}
+.about__wrapper {
+  padding: 0 3%;
+  margin: auto;
+  display: flex;
+  max-width: 1170px;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__content {
+  margin-left: 6%;
+  width: 39%;
+}
+.about__title {
+  text-align: center;
+  position: relative;
+  line-height: 3.6rem;
+  font-family: "Yeseva One", Times, serif;
+  font-size: 3.6rem;
+  margin: 0;
+  color: #c90;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.about__text {
+  line-height: 2.4rem;
+  font-family: "Lato", Arial, san-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  color: #4c4c4c;
+  text-align: center;
+  margin-top: 30px;
+}
+.about__cook {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.ingredients {
+  background-image: url("../img/bg-ingredients@1x.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 101px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .ingredients {
+    background-image: url("../img/bg-ingredients@2x.jpg");
+  }
+}
+.ingredients__wrapper {
+  padding: 0 3%;
+  margin: auto;
+  max-width: 1170px;
+  display: table;
+  clear: both;
+  content: "";
+}
+.ingredients__content {
+  float: right;
+  width: 49%;
+  padding: 84px 6% 78px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.67);
+}
+.ingredients__title {
+  text-align: center;
+  position: relative;
+  line-height: 3.6rem;
+  font-family: "Yeseva One", Times, serif;
+  font-size: 3.6rem;
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+}
+.ingredients__divider {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.ingredients__text {
+  line-height: 2.4rem;
+  font-family: "Lato", Arial, san-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+}
+.ingredients__images {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 68px;
+}
+.menu {
+  background-color: #fff;
+  background-image: url("../img/bg-menu@1x.png");
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .menu {
+    background-image: url("../img/bg-menu@2x.png");
+    background-size: cover;
+  }
+}
+.menu__wrapper {
+  padding: 0 3%;
+  margin: auto;
+  display: flex;
+  max-width: 1170px;
+  padding-left: 9%;
+  padding-right: 9%;
+  justify-content: space-between;
+}
+.menu__inner {
+  width: 44%;
+}
+.menu__section {
+  margin-top: 65px;
+}
+.menu__section:first-child {
+  margin-top: 0;
+}
+.menu__title {
+  text-align: center;
+  position: relative;
+  line-height: 2.4rem;
+  font-family: "Yeseva One", Times, serif;
+  font-size: 3.6rem;
+  margin: 0;
+  color: #c90;
+  font-weight: normal;
+}
+.menu__divider {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.menu__item {
+  position: relative;
+  margin-top: 20px;
+  padding: 10px;
+}
+.menu__item:nth-child(2) {
+  margin-top: 55px;
+}
+.menu__item--special {
+  border: 1px solid rgba(204, 153, 0, 0.4);
+}
+.menu__item sup {
+  position: absolute;
+  top: -29%;
+  right: -1px;
+  content: "Special";
+  line-height: 2.4rem;
+  font-family: "Lato", Arial, san-serif;
+  font-size: 1.4rem;
+  color: #fff;
+  opacity: .6;
+  padding: 0 13px;
+  background: #c89f2d;
+}
+.menu__item-inner {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(204, 153, 0, 0.3);
+  padding-bottom: 10px;
+}
+.menu__meal {
+  line-height: 2.4rem;
+  font-family: "Yeseva One", Times, serif;
+  font-size: 2.1rem;
+  margin: 0;
+  color: #c89f2d;
+  font-weight: normal;
+}
+.menu__price {
+  line-height: 2.4rem;
+  font-family: "Yeseva One", Times, serif;
+  font-size: 2.1rem;
+  margin: 0;
+  color: #c89f2d;
+  font-weight: normal;
+}
+.menu__descr {
+  line-height: 2.4rem;
+  font-family: "Lato", Arial, san-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  color: #4c4c4c;
+  margin-top: 7px;
+}
+.page-footer {
+  background-color: #191919;
+  padding-top: 52px;
+  padding-bottom: 50px;
+}
+.page-footer__wrapper {
+  padding: 0 3%;
+  margin: auto;
+  display: flex;
+  max-width: 1170px;
+  justify-content: space-between;
+}
+.page-footer__inner {
+  width: 19%;
+  padding: 0 5%;
+}
+.page-footer__divider {
+  display: block;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+.about-us {
+  width: 30%;
+}
+.about-us__title {
+  text-align: center;
+  line-height: 2.4rem;
+  font-family: "Yeseva One", Times, serif;
+  font-size: 2.4rem;
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+}
+.about-us__text {
+  line-height: 2.4rem;
+  font-family: "Open Sans", Arial, san-serif;
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+}
+.hours__title {
+  text-align: center;
+  line-height: 2.4rem;
+  font-family: "Yeseva One", Times, serif;
+  font-size: 2.4rem;
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+}
+.hours__text {
+  line-height: 2.4rem;
+  font-family: "Open Sans", Arial, san-serif;
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  width: 53%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.cards li {
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+}
+.cards svg {
+  fill: #fff;
+}
+.location__title {
+  text-align: center;
+  line-height: 2.4rem;
+  font-family: "Yeseva One", Times, serif;
+  font-size: 2.4rem;
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+}
+.location__text {
+  line-height: 2.4rem;
+  font-family: "Open Sans", Arial, san-serif;
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  width: 45%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.footer-social li {
+  width: 16px;
+  height: 16px;
+}
+.footer-social a {
+  display: block;
+  height: 100%;
+  font-size: 0;
+}
+.footer-social svg {
+  fill: #fff;
+}
+.page-header {
+  position: relative;
+}
+.top-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  z-index: 100;
+}
+.top-header__wrapper {
+  padding: 0 3%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+}
+.top-header__logo {
+  margin-right: 15%;
+}
+.main-nav {
+  width: 58%;
+}
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-nav li {
+  padding: 40px 13px 39px 13px;
+  cursor: pointer;
+}
+.main-nav li:hover {
+  box-shadow: inset 0 3px rgba(255, 255, 255, 0.71);
+}
+.main-nav__active-item {
+  box-shadow: inset 0 3px rgba(255, 255, 255, 0.71);
+}
+.main-nav a {
+  font-family: "Gentium Book Basic", Times, serif;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  width: 7%;
+}
+.social li {
+  width: 21px;
+  height: 21px;
+}
+.social a {
+  display: block;
+  height: 100%;
+  font-size: 0;
+  line-height: 16px;
+}
+.social svg {
+  fill: #dab33e;
+}
+@media (max-width: 910px) {
+  .social {
+    display: none;
+  }
+}
+.promo {
+  background-image: url("../img/bg-promo@1x.jpg");
+  background-position: center;
+  background-size: cover;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .promo {
+    background-image: url("../img/bg-promo@2x.jpg");
+  }
+}
+.promo__wrapper {
+  padding: 0 3%;
+  margin: auto;
+  max-width: 1170px;
+  padding-top: 233px;
+  padding-bottom: 135px;
+}
+.promo__btn-container {
+  width: 486px;
+  margin: 0 auto;
+  margin-top: 35px;
+  font-size: 0;
+}
+.promo__btn {
+  display: inline-block;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+  font-family: "Lato", Arial, sans-serif;
+  padding: 23px 52px 21px;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8);
+}
+.promo__btn--menu {
+  margin-left: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.promo__title {
+  position: relative;
+  font-family: "Yeseva One", Times, serif;
+  font-size: 9rem;
+  margin: 0;
+  line-height: 11rem;
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+}
+.reservations {
+  background-color: #fff;
+  background-image: url("../img/bg-about@1x.png");
+  padding-top: 100px;
+  padding-bottom: 103px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .reservations {
+    background-image: url("../img/bg-about@2x.png");
+    background-size: cover;
+  }
+}
+.reservations__wrapper {
+  padding: 0 3%;
+  margin: auto;
+  display: flex;
+  max-width: 1170px;
+  justify-content: space-between;
+}
+.reservations__content {
+  width: 39%;
+  padding: 0 5%;
+}
+.reservations__title {
+  text-align: center;
+  position: relative;
+  line-height: 2.4rem;
+  font-family: "Yeseva One", Times, serif;
+  font-size: 3.6rem;
+  margin: 0;
+  color: #c90;
+  font-weight: normal;
+}
+.reservations__divider {
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.reservations__text {
+  line-height: 2.4rem;
+  font-family: "Lato", Arial, san-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  color: #4c4c4c;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.reservations__form {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.reservations__form label {
+  width: 46%;
+  line-height: auto;
+  font-family: "Open Sans", Arial, san-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+  color: #c9a131;
+  margin-bottom: 11px;
+}
+.reservations__input {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  border: 1px solid #c8c6c6;
+  padding-left: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: auto;
+  font-family: "Open Sans", Arial, san-serif;
+  font-size: 1.6rem;
+  color: #7c7c7c;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.4);
+}
+.reservations__input--btn {
+  width: 46%;
+  margin: 20px auto 0;
+  text-align: center;
+  background-color: #c9a131;
+  color: #fff;
+  font-style: normal;
+}
+.reservations__input--select {
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  background: none;
+  background-image: url("../img/reservations__expand.svg");
+}
+.reservations__input--select::-ms-expand {
+  display: none;
+}
+.reservations__input:focus {
+  border: 1px solid #c89f2d;
+  outline: none;
+}
+.reviews {
+  background-image: url("../img/bg-reviews@1x.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 101px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .reviews {
+    background-image: url("../img/bg-reviews@2x.jpg");
+  }
+}
+.reviews__wrapper {
+  padding: 0 3%;
+  margin: auto;
+  max-width: 1170px;
+  padding: 0 19%;
+}
+.reviews__content {
+  padding: 80px 8% 100px;
+  background-color: rgba(0, 0, 0, 0.67);
+}
+.reviews__title {
+  text-align: center;
+  position: relative;
+  line-height: 3.6rem;
+  font-family: "Yeseva One", Times, serif;
+  font-size: 3.6rem;
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+}
+.reviews__divider {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.reviews__text {
+  position: relative;
+  line-height: 4.5rem;
+  font-family: "Gentium Book Basic", Times, serif;
+  font-size: 2.5rem;
+  margin: 0;
+  color: #dde0df;
+  text-align: center;
+  margin-top: 25px;
+}
+.reviews__text:before {
+  position: absolute;
+  top: -3%;
+  left: -6%;
+  width: 32px;
+  height: 32px;
+  content: "";
+  background-image: url("../img/reviews__quotes.svg");
+  background-size: contain;
+  opacity: .47;
+}
+.reviews__source {
+  display: block;
+  line-height: 4.5rem;
+  font-family: "Lato", Arial, san-serif;
+  font-size: 1.8rem;
+  margin: 0;
+  color: #dde0df;
+  text-align: center;
+  font-style: normal;
+  margin-top: 20px;
+}
