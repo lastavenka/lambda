@@ -1,0 +1,110 @@
+.menu {
+  background-color: @white;
+  background-image: url("../img/bg-menu@1x.png");
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    background-image: url("../img/bg-menu@2x.png");
+    background-size: cover;
+  }
+
+  &__wrapper {
+    .wrapper;
+    display: flex;
+    max-width: 1170px;
+    padding-left: 9%;
+    padding-right: 9%;
+    justify-content: space-between;
+  }
+
+  &__inner {
+    width: 44%;
+  }
+
+  &__section {
+    margin-top: 65px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    position: relative;
+    line-height: @line-height-base;
+    font-family: "Yeseva One", Times, serif;
+    font-size: @font-size-base + 2;
+    margin: 0;
+    color: @mustard;
+    font-weight: normal;
+  }
+
+  &__divider {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  &__item {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+
+    &:nth-child(2) {
+      margin-top: 55px;
+    }
+
+    &--special {
+      border: 1px solid rgba(204, 153, 0, .4);
+    }
+
+    sup {
+      position: absolute;
+      top: -29%;
+      right: -1px;
+      content: "Special";
+      line-height: @line-height-base;
+      font-family: "Lato", Arial, san-serif;
+      font-size: @font-size-base - .2;
+      color: @white;
+      opacity: .6;
+      padding: 0 13px;
+      background: @mustard-grey;
+    }
+  }
+
+  &__item-inner {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(204, 153, 0, .3);
+    padding-bottom: 10px;
+  }
+
+  &__meal {
+    line-height: @line-height-base;
+    font-family: "Yeseva One", Times, serif;
+    font-size: @font-size-base + .5;
+    margin: 0;
+    color: @mustard-grey;
+    font-weight: normal;
+  }
+
+  &__price {
+    line-height: @line-height-base;
+    font-family: "Yeseva One", Times, serif;
+    font-size: @font-size-base + .5;
+    margin: 0;
+    color: @mustard-grey;
+    font-weight: normal;
+  }
+
+  &__descr {
+    line-height: @line-height-base;
+    font-family: "Lato", Arial, san-serif;
+    font-size: @font-size-base;
+    margin: 0;
+    color: @grey-4c;
+    margin-top: 7px;
+  }
+}

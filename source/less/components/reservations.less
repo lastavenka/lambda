@@ -1,0 +1,114 @@
+.reservations {
+  background-color: @white;
+  background-image: url("../img/bg-about@1x.png");
+  padding-top: 100px;
+  padding-bottom: 103px;
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    background-image: url("../img/bg-about@2x.png");
+    background-size: cover;
+  }
+
+  &__wrapper {
+    .wrapper;
+    display: flex;
+    max-width: 1170px;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 39%;
+    padding: 0 5%;
+  }
+
+  &__title {
+    text-align: center;
+    position: relative;
+    line-height: @line-height-base;
+    font-family: "Yeseva One", Times, serif;
+    font-size: @font-size-base + 2;
+    margin: 0;
+    color: @mustard;
+    font-weight: normal;
+  }
+  &__divider {
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    line-height: @line-height-base;
+    font-family: "Lato", Arial, san-serif;
+    font-size: @font-size-base;
+    margin: 0;
+    color: @grey-4c;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__form {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    label {
+      width: 46%;
+      line-height: auto;
+      font-family: "Open Sans", Arial, san-serif;
+      font-size: @font-size-base - .2;
+      font-weight: bold;
+      margin: 0;
+      color: @mustard-light;
+      margin-bottom: 11px;
+    }
+  }
+
+  &__input {
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    border: 1px solid @grey;
+    padding-left: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: auto;
+    font-family: "Open Sans", Arial, san-serif;
+    font-size: @font-size-base;
+    color: @grey-7c;
+    font-style: italic;
+    background: rgba(255, 255, 255, .4);
+
+    &--btn {
+      width: 46%;
+      margin: 20px auto 0;
+      text-align: center;
+      background-color: @mustard-light;
+      color: @white;
+      font-style: normal;
+    }
+
+    &--select {
+      display: block;
+      width: 100%;
+      border-radius: 0;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+          -ms-appearance: none;
+      background: none;
+      background-image: url("../img/reservations__expand.svg");
+      //          background-position: right center;
+      //          background-repeat: no-repeat;
+
+      &::-ms-expand {
+        display: none;
+      }
+    }
+
+    &:focus {
+      border: 1px solid @mustard-grey;
+      outline: none;
+    }
+  }
+}

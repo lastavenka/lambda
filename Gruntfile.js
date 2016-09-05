@@ -156,7 +156,7 @@ module.exports = function (grunt) {
 
             less: {
                 files: ["source/less/**/*.less"],
-                tasks: ["less"],
+                tasks: ["less", "cssmin"],
                 options: {
                     spawn: false
                 },

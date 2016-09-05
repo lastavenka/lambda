@@ -1,0 +1,128 @@
+.page-footer {
+  background-color: @grey-19;
+  padding-top: 52px;
+  padding-bottom: 50px;
+
+  &__wrapper {
+    .wrapper;
+    display: flex;
+    max-width: 1170px;
+    justify-content: space-between;
+  }
+
+  &__inner {
+    width: 19%;
+    padding: 0 5%;
+  }
+
+  &__divider {
+    display: block;
+    margin: 0 auto;
+    margin-top: 16px;
+  }
+}
+
+.about-us {
+  width: 30%;
+
+
+  &__title {
+    text-align: center;
+    line-height: @line-height-base;
+    font-family: "Yeseva One", Times, serif;
+    font-size: @font-size-base + .8;
+    margin: 0;
+    color: @white;
+    font-weight: normal;
+  }
+
+  &__text {
+    line-height: @line-height-base;
+    font-family: "Open Sans", Arial, san-serif;
+    font-size: @font-size-base;
+    color: @white;
+    text-align: center;
+  }
+}
+
+.hours {
+  &__title {
+    text-align: center;
+    line-height: @line-height-base;
+    font-family: "Yeseva One", Times, serif;
+    font-size: @font-size-base + .8;
+    margin: 0;
+    color: @white;
+    font-weight: normal;
+  }
+
+  &__text {
+    line-height: @line-height-base;
+    font-family: "Open Sans", Arial, san-serif;
+    font-size: @font-size-base;
+    color: @white;
+    text-align: center;
+  }
+}
+
+.cards {
+  .list-to-flex;
+  align-items: center;
+  width: 53%;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  li {
+    width: 21px;
+    height: 21px;
+    font-size: 0;
+  }
+
+  svg {
+    fill: @white;
+  }
+}
+
+.location {
+  &__title {
+    text-align: center;
+    line-height: @line-height-base;
+    font-family: "Yeseva One", Times, serif;
+    font-size: @font-size-base + .8;
+    margin: 0;
+    color: @white;
+    font-weight: normal;
+  }
+
+  &__text {
+    line-height: @line-height-base;
+    font-family: "Open Sans", Arial, san-serif;
+    font-size: @font-size-base;
+    color: @white;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.footer-social {
+  .list-to-flex;
+  align-items: center;
+  width: 45%;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  li {
+    width: 16px;
+    height: 16px;
+  }
+
+  a {
+    display: block;
+    height: 100%;
+    font-size: 0;
+  }
+
+  svg {
+    fill: @white;
+  }
+}

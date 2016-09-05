@@ -1,0 +1,71 @@
+.reviews {
+  background-image: url("../img/bg-reviews@1x.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 101px;
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    background-image: url("../img/bg-reviews@2x.jpg");
+  }
+  &__wrapper {
+    .wrapper;
+    max-width: 1170px;
+    padding: 0 19%;
+  }
+
+  &__content {
+    padding: 80px 8% 100px;
+    background-color: rgba(0, 0, 0, .67);
+  }
+
+  &__title {
+    text-align: center;
+    position: relative;
+    line-height: @line-height-base + 1.2;
+    font-family: "Yeseva One", Times, serif;
+    font-size: @font-size-base + 2;
+    margin: 0;
+    color: @white;
+    font-weight: normal;
+  }
+  &__divider {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  &__text {
+      position: relative;
+    line-height: @line-height-base + 2.1;
+    font-family: "Gentium Book Basic", Times, serif;
+    font-size: @font-size-base + .9;
+    margin: 0;
+    color: @grey-light;
+    text-align: center;
+    margin-top: 25px;
+      
+      &:before {
+          position: absolute;
+          top: -3%;
+          left: -6%;
+          width: 32px;
+          height: 32px;
+          content: "";
+          background-image: url("../img/reviews__quotes.svg");
+          background-size: contain;
+          opacity: .47;
+      }
+  }
+
+  &__source {
+    display: block;
+    line-height: @line-height-base + 2.1;
+    font-family: "Lato", Arial, san-serif;
+    font-size: @font-size-base + .2;
+    margin: 0;
+    color: @grey-light;
+    text-align: center;
+    font-style: normal;
+    margin-top: 20px;
+  }
+}

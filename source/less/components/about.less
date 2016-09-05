@@ -1,0 +1,48 @@
+.about {
+  background-color: @white;
+  background-image: url("../img/bg-about@1x.png");
+  padding-top: 60px;
+  padding-bottom: 25px;
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    background-image: url("../img/bg-about@2x.png");
+    background-size: cover;
+  }
+  &__wrapper {
+    .wrapper;
+    display: flex;
+    max-width: 1170px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content {
+    margin-left: 6%;
+    width: 39%;
+  }
+  &__title {
+    text-align: center;
+    position: relative;
+    line-height: @line-height-base + 1.2;
+    font-family: "Yeseva One", Times, serif;
+    font-size: @font-size-base + 2;
+    margin: 0;
+    color: @mustard;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    line-height: @line-height-base;
+    font-family: "Lato", Arial, san-serif;
+    font-size: @font-size-base;
+    margin: 0;
+    color: @grey-4c;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  &__cook {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}

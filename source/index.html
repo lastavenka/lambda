@@ -4,18 +4,18 @@
 <head>
     <meta charset="utf-8">
     <title>Lambda</title>
-    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <link rel="stylesheet" href="css/style.min.css" media="screen" />
 </head>
 
 <body>
     <header class="page-header">
-        <div class="top-header--wrapper">
-            <div class="top-header">
-                    <a href="#" class="top-header__logo">Lambda</a>
-                
+        <div class="top-header">
+            <div class="top-header__wrapper">
+                <a href="#" class="top-header__logo"><img src="img/header__logo@1x.png" srcset="img/header__logo@2x.png 2x" width="156" height="92" alt="Lambda"></a>
+
                 <nav class="main-nav">
                     <ul class="main-nav__list">
-                        <li class="main-menu__active-item"><a href="#">Home</a></li>
+                        <li class="main-nav__active-item"><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Ingredients</a></li>
                         <li><a href="#">Menu</a></li>
@@ -23,51 +23,65 @@
                         <li><a href="#">Reservations</a></li>
                     </ul>
                 </nav>
-                
+
                 <ul class="social">
                     <li>
-                        <a href="#" class="social__btn-twi">Twitter</a>
+                        <a href="#" class="social__btn-twi"><svg width="21" height="21">
+                                <use xlink:href="#icon-social--twitter"></use>
+                            </svg>Twitter
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="social__btn-youtube">YouTube</a>
+                        <a href="#" class="social__btn-youtube"><svg width="21" height="21">
+                                <use xlink:href="#icon-social--youtube"></use>
+                            </svg>YouTube
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="social__btn-fb">Facebook</a>
+                        <a href="#" class="social__btn-fb"><svg width="21" height="21">
+                                <use xlink:href="#icon-social--fb"></use>
+                            </svg>Facebook
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
 
-    <div class="promo">
-        <div class="promo__wrapper">
-            <h1 class="promo__title">the right ingredients
+        <div class="promo">
+            <div class="promo__wrapper">
+                <h1 class="promo__title">the right ingredients<br>
     for the right food</h1>
-            <a href="#" class="promo__btn promo__btn--book">Book a table</a>
-            <a href="#" class="promo__btn promo__btn--menu">See the menu</a>
+               <img class="page-footer__divider" src="img/header__divider@1x.png" srcset="img/header__divider@2x.png 2x" width="20%" height="100%" alt="The right ingredients for the right food">
+                <div class="promo__btn-container">
+                    <a href="#reservations" class="promo__btn promo__btn--book">Book a table</a>
+                    <a href="#menu" class="promo__btn promo__btn--menu">See the menu</a>
+                </div>
+            </div>
         </div>
-    </div>
-</header>
-   
+    </header>
+
     <div class="about">
         <div class="about__wrapper">
             <section class="about__content">
                 <h2 class="about__title">Just the right food</h2>
+                <img class="page-footer__divider" src="img/about__divider@1x.png" srcset="img/about__divider@2x.png 2x" width="57%" height="100%" alt="Just the right food">
                 <p class="about__text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>
-                <img src="" width="" height="" alt="">
+                <img class="about__cook" src="img/about__cook@1x.png" srcset="img/about__cook@2x.png 2x" width="51%" height="100%" alt="Just the right food">
             </section>
-            <div class="about__image"></div>
+            <img class="about__plate" src="img/about__plate@1x.png" srcset="img/about__plate@2x.png 2x" width="53%" height="100%" alt="Just the right food">
         </div>
     </div>
-    
+
     <div class="ingredients">
         <div class="ingredients__wrapper">
             <section class="ingredients__content">
-                <h2 class="ingredients__title">Fine ingredients</h1>
+                <h2 class="ingredients__title">Fine ingredients</h2>
+                <img class="ingredients__divider" src="img/ingredients__divider@1x.png" srcset="img/ingredients__divider@2x.png 2x" width="57%" height="100%" alt="Fine ingredients">
                 <p class="ingredients__text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>
                 <div class="ingredients__images">
-                    <img src="" width="" height="" alt="ingredient1">
-                    <img src="" width="" height="" alt="ingredient2">
-                    <img src="" width="" height="" alt="ingredient3">
+                    <img src="img/ingredients__img--1@1x.png" srcset="img/ingredients__img--1@2x.png 2x" width="26%" height="100%" alt="Fine ingredients">
+                    <img src="img/ingredients__img--2@1x.png" srcset="img/ingredients__img--2@2x.png 2x" width="26%" height="100%" alt="Fine ingredients">
+                    <img src="img/ingredients__img--3@1x.png" srcset="img/ingredients__img--3@2x.png 2x" width="26%" height="100%" alt="Fine ingredients">
                 </div>
             </section>
             <div class="about__image"></div>
@@ -75,25 +89,28 @@
     </div>
     
     <div class="menu">
+      <a id="menu"></a>
        <div class="menu__wrapper">
-            <section class="menu__section">
-                <h2 class="menu__title">Appetisers</h2>
+            <div class="menu__inner">
+                <section class="menu__section">
+                    <h2 class="menu__title">Appetisers</h2>
+                    <img class="menu__divider" src="img/about__divider@1x.png" srcset="img/about__divider@2x.png 2x" width="57%" height="100%" alt="Appetisers">
                 <div class="menu__item">
-                    <div>
+                    <div class="menu__item-inner">
                         <h3 class="menu__meal">Tzatsiki</h3>
                         <span class="menu__price">$3.99</span>
                     </div>
                     <p class="menu__descr">Refreshing traditional cucumber and garlic yoghurt dip.</p>
                 </div>
                 <div class="menu__item">
-                    <div>
+                    <div class="menu__item-inner">
                         <h3 class="menu__meal">Aubergine Salad</h3>
                         <span class="menu__price">$5.50</span>
                     </div>
                     <p class="menu__descr">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                 </div>
                 <div class="menu__item">
-                    <div>
+                    <div class="menu__item-inner">
                         <h3 class="menu__meal">Aubergine Salad</h3>
                         <span class="menu__price">$5.25</span>
                     </div>
@@ -102,39 +119,43 @@
             </section>
             <section class="menu__section">
                 <h2 class="menu__title">Salads</h2>
+                <img class="menu__divider" src="img/about__divider@1x.png" srcset="img/about__divider@2x.png 2x" width="57%" height="100%" alt="Salads">
                 <div class="menu__item">
-                    <div>
+                    <div class="menu__item-inner">
                         <h3 class="menu__meal">Olive Special</h3>
                         <span class="menu__price">$5.99</span>
                     </div>
                     <p class="menu__descr">Refreshing traditional cucumber and garlic yoghurt dip.</p>
                 </div>
                 <div class="menu__item menu__item--special">
-                    <div>
-                        <h3 class="menu__meal">Greek Salad</h3>
+                    <div class="menu__item-inner">
+                        <h3 class="menu__meal">Greek Salad<sup>Special</sup></h3>
                         <span class="menu__price">$5.50</span>
                     </div>
-                    <p class="menu__desc">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                    <p class="menu__descr">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                 </div>
                 <div class="menu__item">
-                    <div>
+                    <div class="menu__item-inner">
                         <h3 class="menu__meal">Gusto Salad</h3>
                         <span class="menu__price">$5.25</span>
                     </div>
                     <p class="menu__descr">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                 </div>
             </section>
+        </div>
+        <div class="menu__inner">
             <section class="menu__section">
                 <h2 class="menu__title">Starters</h2>
+                <img class="menu__divider" src="img/about__divider@1x.png" srcset="img/about__divider@2x.png 2x" width="57%" height="100%" alt="Starters">
                 <div class="menu__item">
-                    <div>
+                    <div class="menu__item-inner">
                         <h3 class="menu__meal">Haloumi</h3>
                         <span class="menu__price">$3.99</span>
                     </div>
                     <p class="menu__descr">Refreshing traditional cucumber and garlic yoghurt dip.</p>
                 </div>
                 <div class="menu__item">
-                    <div>
+                    <div class="menu__item-inner">
                         <h3 class="menu__meal">Spinach Pie</h3>
                         <span class="menu__price">$5.50</span>
                     </div>
@@ -144,29 +165,30 @@
             </section>
             <section class="menu__section">
                 <h2 class="menu__title">Main Dishes</h2>
+                <img class="menu__divider" src="img/about__divider@1x.png" srcset="img/about__divider@2x.png 2x" width="57%" height="100%" alt="Main Dishes">
                 <div class="menu__item">
-                    <div>
+                    <div class="menu__item-inner">
                         <h3 class="menu__meal">Cornish Mackerel</h3>
                         <span class="menu__price">$5.99</span>
                     </div>
                     <p class="menu__descr">Refreshing traditional cucumber and garlic yoghurt dip.</p>
                 </div>
                 <div class="menu__item menu__item--special">
-                    <div>
-                        <h3 class="menu__meal">Roast Lamb</h3>
+                    <div class="menu__item-inner">
+                        <h3 class="menu__meal">Roast Lamb<sup>Special</sup></h3>
                         <span class="menu__price">$5.50</span>
                     </div>
                     <p class="menu__descr">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                 </div>
                 <div class="menu__item">
-                    <div>
+                    <div class="menu__item-inner">
                         <h3 class="menu__meal">Fried Chicken</h3>
                         <span class="menu__price">$5.25</span>
                     </div>
                     <p class="menu__descr">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                 </div>
                 <div class="menu__item">
-                    <div>
+                    <div class="menu__item-inner">
                         <h3 class="menu__meal">Pastitsio</h3>
                         <span class="menu__price">$5.99</span>
                     </div>
@@ -175,94 +197,122 @@
             </section>
         </div>
     </div>
+    </div>
 
     <div class="reviews">
         <div class="reviews__wrapper">
-            <h2 class="reviews__title">Guest Reviews</h2>
-            <blockquote class="reviews__text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! 
-            <cite class="reviews__source">- food inc, New York</cite></blockquote>
+            <div class="reviews__content">
+                <h2 class="reviews__title">Guest Reviews</h2>
+                <img class="reviews__divider" src="img/ingredients__divider@1x.png" srcset="img/ingredients__divider@2x.png 2x" width="39%" height="100%" alt="Guest Reviews">
+                <blockquote class="reviews__text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
+                    <cite class="reviews__source">- food inc, New York</cite></blockquote>
+            </div>
         </div>
     </div>
 
     <div class="reservations">
-       <div class="reservations__wrapper">
-        <img src="" width="" height="" alt="main dish">
-        <img src="" width="" height="" alt="dessert">
-        <section class="reservations__content">
-            <h2 class="reservations__title">Just the right food</h2>
-            <p class="reservations__text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.
-                <br> Delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</p>
-            <form action="/" method="get">
-                <label>
-                    Name
-                    <input type="text" placeholder="your name *" />
-                </label>
-                <label>
-                    Email
-                    <input type="email" placeholder="your email *" />
-                </label>
-                <label>
-                    Date
-                    <input type="date" />
-                </label>
-                <label>
-                    Party number
-                    <select name="" class="reservations__select" placeholder="party number">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                    </select>
-                </label>
-                <input class="reservations__btn" type="submit" value="Book now!" />
-            </form>
-        </section>
+        <a id="reservations"></a>
+        <div class="reservations__wrapper">
+            <img src="img/reservation__img--1@1x.jpg" srcset="img/reservation__img--1@2x.jpg 2x" width="23%" height="100%" alt="Main dish">
+            <img src="img/reservation__img--2@1x.jpg" srcset="img/reservation__img--2@2x.jpg 2x" width="23%" height="100%" alt="dessert">
+            <section class="reservations__content">
+                <h2 class="reservations__title">Just the right food</h2>
+                <img class="reservations__divider" src="img/about__divider@1x.png" srcset="img/about__divider@2x.png 2x" width="57%" alt="Just the right food">
+                <p class="reservations__text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.</p>
+                <p class="reservations__text">Delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</p>
+                <form class="reservations__form" action="/" method="get">
+                    <label>
+                        Name
+                        <input class="reservations__input" type="text" placeholder="your name *"/>
+                    </label>
+                    <label>
+                        Email
+                        <input class="reservations__input" type="email" placeholder="your email *" />
+                    </label>
+                    <label>
+                        Date
+                        <input class="reservations__input" type="date" />
+                    </label>
+                    <label>
+                        Party number
+                        <select name="" class="reservations__input reservations__input--select" placeholder="party number">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                    </label>
+                    <input class="reservations__input reservations__input--btn" type="submit" value="Book now!" />
+                </form>
+            </section>
         </div>
     </div>
 
     <footer class="page-footer">
-        <div class="footer__wrapper">
-            <section class="about">
-                <h3 class="about__title">About Us</h3>
-                <p class="about__text">Lambda's new and expanded Chelsea location represents a truly authentic <b>Greek</b> patisserie, featuring breakfasts of fresh croissants and steaming bowls of café.
-Lamda the best restaurant in town</p>
+        <div class="page-footer__wrapper">
+            <section class="about-us">
+                <h3 class="about-us__title">About Us</h3>
+                <img class="page-footer__divider" src="img/footer__divider@1x.png" srcset="img/footer__divider@2x.png 2x" width="54%" alt="About us">
+                <p class="about-us__text">Lambda's new and expanded Chelsea location represents a truly authentic <strong>Greek</strong> patisserie, featuring breakfasts of fresh croissants and steaming bowls of café.<br>Lamda the best restaurant in town</p>
             </section>
-            <section class="hours">
-                <h3 class="hours__title">Opening Hours</h3>
-                <p class="hours__text"><span>Mon-Thu:</span> 7:00am-8:00pm<br>
-<span>Fri-Sun:</span> 7:00am-10:00pm</p>
-            </section>
-            <ul class="cards">
-                <li class="cards__american-express"></li>
-                <li class="cards__paypal"></li>
-                <li class="cards__visa"></li>
-                <li class="cards__master-card"></li>
-            </ul>
-            <section class="location">
-                <h3 class="location__title">Our Location</h3>
-                <p class="location__text">19th Paradise Street Sitia
-128 Meserole Avenue</p>
-            </section>
-            <ul class="footer__social">
-                <li>
-                    <a href="#" class="social__btn-fb">Facebook</a>
-                </li>
-                <li>
-                    <a href="#" class="social__btn-youtube">YouTube</a>
-                </li>
-                <li>
-                    <a href="#" class="social__btn-twi">Twitter</a>
-                </li>
-                <li>
-                    <a href="#" class="social__btn-insta">Instagram</a>
-                </li>
-            </ul>
+            <div class="page-footer__inner">
+                <section class="hours">
+                    <h3 class="hours__title">Opening Hours</h3>
+                    <img class="page-footer__divider" src="img/footer__divider@1x.png" srcset="img/footer__divider@2x.png 2x" width="87%" height="100%" alt="About us">
+                    <p class="hours__text"><b>Mon-Thu:</b> 7:00am-8:00pm
+                        <br>
+                        <b>Fri-Sun:</b> 7:00am-10:00pm</p>
+                </section>
+                <ul class="cards">
+                    <li class="cards__american-express"><svg width="21" height="21">
+                                <use xlink:href="#icon-cards__american-express"></use>
+                            </svg>American Express</li>
+                    <li class="cards__paypal"><svg width="21" height="21">
+                                <use xlink:href="#icon-cards__paypal"></use>
+                            </svg>PayPal</li>
+                    <li class="cards__visa"><svg width="21" height="21">
+                                <use xlink:href="#icon-cards__visa"></use>
+                            </svg>Visa</li>
+                    <li class="cards__mastercard"><svg width="21" height="21">
+                                <use xlink:href="#icon-cards__mastercard"></use>
+                            </svg>Mastercard</li>
+                </ul>
+            </div>
+            <div class="page-footer__inner">
+                <section class="location">
+                    <h3 class="location__title">Our Location</h3>
+                    <img class="page-footer__divider" src="img/footer__divider@1x.png" srcset="img/footer__divider@2x.png 2x" width="87%" height="100%" alt="About us">
+                    <p class="location__text">19th Paradise Street Sitia 128 Meserole Avenue</p>
+                </section>
+                <ul class="footer-social">
+                    <li>
+                        <a href="#" class="social__btn-fb"><svg width="16" height="16">
+                                <use xlink:href="#icon-social--fb"></use>
+                            </svg>Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#" class="social__btn-youtube"><svg width="16" height="16">
+                                <use xlink:href="#icon-social--youtube"></use>
+                            </svg>YouTube</a>
+                    </li>
+                    <li>
+                        <a href="#" class="social__btn-twi"><svg width="16" height="16">
+                                <use xlink:href="#icon-social--twitter"></use>
+                            </svg>Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#" class="social__btn-insta"><svg width="16" height="16">
+                                <use xlink:href="#icon-social--instagram"></use>
+                            </svg>Instagram</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
-    
+
     <script src="js/script.min.js"></script>
 </body>
 
