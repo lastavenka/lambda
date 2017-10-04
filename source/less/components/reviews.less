@@ -1,4 +1,5 @@
 .reviews {
+  min-width: 1000px;
   background-image: url("../img/bg-reviews@1x.jpg");
   background-position: center;
   background-size: cover;
@@ -12,12 +13,10 @@
     max-width: 1170px;
     padding: 0 19%;
   }
-
   &__content {
     padding: 80px 8% 100px;
     background-color: rgba(0, 0, 0, .67);
   }
-
   &__title {
     text-align: center;
     position: relative;
@@ -33,9 +32,8 @@
     margin: 0 auto;
     margin-top: 20px;
   }
-
   &__text {
-      position: relative;
+    position: relative;
     line-height: @line-height-base + 2.1;
     font-family: "Gentium Book Basic", Times, serif;
     font-size: @font-size-base + .9;
@@ -43,20 +41,18 @@
     color: @grey-light;
     text-align: center;
     margin-top: 25px;
-      
-      &:before {
-          position: absolute;
-          top: -3%;
-          left: -6%;
-          width: 32px;
-          height: 32px;
-          content: "";
-          background-image: url("../img/reviews__quotes.svg");
-          background-size: contain;
-          opacity: .47;
-      }
+    &:before {
+      position: absolute;
+      top: -3%;
+      left: -6%;
+      width: 32px;
+      height: 32px;
+      content: "";
+      background-image: url("../img/reviews__quotes.svg");
+      background-size: contain;
+      opacity: .47;
+    }
   }
-
   &__source {
     display: block;
     line-height: @line-height-base + 2.1;

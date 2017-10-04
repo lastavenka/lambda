@@ -1,14 +1,15 @@
 .page-header {
   position: relative;
+  min-width: 1000px;
 }
 
 .top-header {
   width: 100%;
   position: absolute;
   top: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,.6), rgba(0,0,0,0));;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0));
+  ;
   z-index: 100;
-
   &__wrapper {
     .wrapper;
     display: flex;
@@ -16,33 +17,26 @@
     align-items: center;
     max-width: 1170px;
   }
-
   &__logo {
     margin-right: 15%;
   }
 }
 
-
 .main-nav {
   width: 58%;
-
   &__list {
     .list-to-flex;
   }
-
   li {
-    padding: 40px 13px 39px 13px;
+    padding: 40px 1% 39px 1%;
     cursor: pointer;
-
     &:hover {
       box-shadow: inset 0 3px rgba(255, 255, 255, .71);
     }
   }
-
   &__active-item {
     box-shadow: inset 0 3px rgba(255, 255, 255, .71);
   }
-
   a {
     font-family: "Gentium Book Basic", Times, serif;
   }
@@ -52,23 +46,18 @@
   .list-to-flex;
   align-items: center;
   width: 7%;
-
   li {
-    width: 21px;
+    width: 30%;
     height: 21px;
   }
-
   a {
     display: block;
-    height: 100%;
     font-size: 0;
     line-height: 16px;
   }
-
   svg {
     fill: @mustard-lighten;
   }
-
   @media(max-width: 910px) {
     display: none;
   }
@@ -78,25 +67,21 @@
   background-image: url("../img/bg-promo@1x.jpg");
   background-position: center;
   background-size: cover;
-
   @media (-webkit-min-device-pixel-ratio: 2) {
     background-image: url("../img/bg-promo@2x.jpg");
   }
-
   &__wrapper {
     .wrapper;
     max-width: 1170px;
     padding-top: 233px;
     padding-bottom: 135px;
   }
-
   &__btn-container {
-    width: 486px;
+    text-align: center;
     margin: 0 auto;
     margin-top: 35px;
     font-size: 0;
   }
-
   &__btn {
     display: inline-block;
     font-size: @font-size-base + .2;
@@ -106,7 +91,6 @@
     padding: 23px 52px 21px;
     background: rgba(0, 0, 0, .6);
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .8);
-
     &--menu {
       margin-left: 30px;
       background: rgba(255, 255, 255, .3);

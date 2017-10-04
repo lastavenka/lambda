@@ -464,6 +464,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
 .retina-sprites(@retina-groups);
 */
 .about {
+  min-width: 1000px;
   background-color: #fff;
   background-image: url("../img/bg-about@1x.png");
   padding-top: 60px;
@@ -513,6 +514,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   margin-top: 50px;
 }
 .ingredients {
+  min-width: 1000px;
   background-image: url("../img/bg-ingredients@1x.jpg");
   background-position: center;
   background-size: cover;
@@ -569,6 +571,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   margin-top: 68px;
 }
 .menu {
+  min-width: 1000px;
   background-color: #fff;
   background-image: url("../img/bg-menu@1x.png");
   padding-top: 100px;
@@ -668,6 +671,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   margin-top: 7px;
 }
 .page-footer {
+  min-width: 1000px;
   background-color: #191919;
   padding-top: 52px;
   padding-bottom: 50px;
@@ -784,6 +788,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
 }
 .page-header {
   position: relative;
+  min-width: 1000px;
 }
 .top-header {
   width: 100%;
@@ -814,7 +819,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   padding: 0;
 }
 .main-nav li {
-  padding: 40px 13px 39px 13px;
+  padding: 40px 1% 39px 1%;
   cursor: pointer;
 }
 .main-nav li:hover {
@@ -836,12 +841,11 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   width: 7%;
 }
 .social li {
-  width: 21px;
+  width: 30%;
   height: 21px;
 }
 .social a {
   display: block;
-  height: 100%;
   font-size: 0;
   line-height: 16px;
 }
@@ -871,7 +875,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   padding-bottom: 135px;
 }
 .promo__btn-container {
-  width: 486px;
+  text-align: center;
   margin: 0 auto;
   margin-top: 35px;
   font-size: 0;
@@ -904,6 +908,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   font-weight: normal;
 }
 .reservations {
+  min-width: 1000px;
   background-color: #fff;
   background-image: url("../img/bg-about@1x.png");
   padding-top: 100px;
@@ -1008,6 +1013,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   outline: none;
 }
 .reviews {
+  min-width: 1000px;
   background-image: url("../img/bg-reviews@1x.jpg");
   background-position: center;
   background-size: cover;

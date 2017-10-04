@@ -1,4 +1,5 @@
 .menu {
+  min-width: 1000px;
   background-color: @white;
   background-image: url("../img/bg-menu@1x.png");
   padding-top: 100px;
@@ -7,7 +8,6 @@
     background-image: url("../img/bg-menu@2x.png");
     background-size: cover;
   }
-
   &__wrapper {
     .wrapper;
     display: flex;
@@ -16,19 +16,15 @@
     padding-right: 9%;
     justify-content: space-between;
   }
-
   &__inner {
     width: 44%;
   }
-
   &__section {
     margin-top: 65px;
-
     &:first-child {
       margin-top: 0;
     }
   }
-
   &__title {
     text-align: center;
     position: relative;
@@ -39,26 +35,21 @@
     color: @mustard;
     font-weight: normal;
   }
-
   &__divider {
     display: block;
     margin: 0 auto;
     margin-top: 20px;
   }
-
   &__item {
     position: relative;
     margin-top: 20px;
     padding: 10px;
-
     &:nth-child(2) {
       margin-top: 55px;
     }
-
     &--special {
       border: 1px solid rgba(204, 153, 0, .4);
     }
-
     sup {
       position: absolute;
       top: -29%;
@@ -73,14 +64,12 @@
       background: @mustard-grey;
     }
   }
-
   &__item-inner {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgba(204, 153, 0, .3);
     padding-bottom: 10px;
   }
-
   &__meal {
     line-height: @line-height-base;
     font-family: "Yeseva One", Times, serif;
@@ -89,7 +78,6 @@
     color: @mustard-grey;
     font-weight: normal;
   }
-
   &__price {
     line-height: @line-height-base;
     font-family: "Yeseva One", Times, serif;
@@ -98,7 +86,6 @@
     color: @mustard-grey;
     font-weight: normal;
   }
-
   &__descr {
     line-height: @line-height-base;
     font-family: "Lato", Arial, san-serif;
